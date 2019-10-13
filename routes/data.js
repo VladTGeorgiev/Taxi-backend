@@ -1,7 +1,8 @@
-require('dotenv').config()
-const express = require('express')
-const router = express.Router()
-const input = require('../data.json')
+require('dotenv').config();
+
+const express = require('express');
+const router = express.Router();
+const input = require('../data.json');
 const fs = require('fs');
 const request = require("request");
 
@@ -11,8 +12,8 @@ const options = { method: 'GET',
 };
 
 const headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
+    'Access-Control-Allow-Origin': 'http://localhost:3000',
+    'Access-Control-Allow-Methods': 'POST, GET',
 };
 
 router.get('/', (req, res) => {
@@ -24,20 +25,15 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const update = req.body.updateRequest
     if (update === 'update') {
-        console.log(update)
         request(options, function (error, response, body) {
             if (error) throw new Error(error);
             fs.writeFile('data.json', body, (err) => {
-              if (err) throw err;
+              if (error) new Error(error);
+              res.writeHead(200, headers);
+              res.end(body);
             });
           });
-        res.writeHead(200, headers);
-        res.end('{updateRequest: finished}');
-    } else {
-        res.writeHead(200, headers);
-        res.end('{updateRequest: Server Error}');
     }
-
 })
 
 module.exports = router
