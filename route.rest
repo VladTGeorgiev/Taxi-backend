@@ -1,0 +1,10 @@
+GET http://localhost:5000/data
+
+###
+
+POST http://localhost:5000/data
+Content-Type: application/json
+
+{
+    "updateRequest": "update"
+}
