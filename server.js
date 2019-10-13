@@ -8,7 +8,7 @@ app.options('*', cors())
 
 app.use(express.json())
 
-const dataRouter = require('./routes/data.js')
+const dataRouter = require('./data.js')
 
 app.use('/data', dataRouter)
 
