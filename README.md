@@ -1,17 +1,7 @@
-1. Clone the repo
-2. cd in Taxi-backend/
-3. npm install
-4. npm run devStart open localhost:5000/data
-
-
-backend
-1. Node.js
-
-- npm install cors
 # Description
 
 A backend component of an app showing real-time positions of up to 50 of the available taxis in the City of London.
-## Install the [!Frontend(https://github.com/VladTGeorgiev/Taxi-location-frontend)] after finishing with these instructions.
+## Install the [![Frontend](https://github.com/VladTGeorgiev/Taxi-location-frontend)] after finishing with these instructions.
 
 ![Preview Frontend](/media/Preview_frontend.png)
 
@@ -19,9 +9,9 @@ A backend component of an app showing real-time positions of up to 50 of the ava
 
 # Technologies 
 
-Node.js v10.16.0 [!React](https://nodejs.org/)]<br/>
-Express.js v6.11.3 [!Express.js](https://expressjs.com/)]<br/>
-Nodemon [!nodemon](https://nodemon.io/)]<br/>
+Node.js v10.16.0 [React](https://nodejs.org/)]<br/>
+Express.js v6.11.3 [Express.js](https://expressjs.com/)]<br/>
+Nodemon [nodemon](https://nodemon.io/)]<br/>
 
 
 
@@ -40,10 +30,10 @@ Nodemon [!nodemon](https://nodemon.io/)]<br/>
     $ npm install
 
 ## Run the server in the development mode.<br />
-Open [http://localhost:5000/data](http://localhost:5000/data) to view it in the browser.
+Open [http://localhost:5000/data](http://localhost:5000/data) to view the server response in the browser.
 
-The server will relstart if you make edits.<br />
-You will also see any lint errors in the console.
+The server will restart if you make edits.<br />
+You will also see any errors in the console.
 
     $ npm run devStart
 
