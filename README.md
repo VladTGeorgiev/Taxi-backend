@@ -3,7 +3,7 @@
 A backend component of an app showing real-time positions of up to 50 of the available taxis in the City of London.
 ## Install the [![Frontend](https://github.com/VladTGeorgiev/Taxi-location-frontend)] after finishing with these instructions.
 
-![Preview Frontend](/media/Preview_frontend.png)
+![Preview Frontend](/Preview_frontend.png)
 
 
 
